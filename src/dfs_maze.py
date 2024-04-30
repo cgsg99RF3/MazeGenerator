@@ -1,7 +1,11 @@
 import pygame
+
 from random import choice
+
 from src.maze import Maze
 from src.cell import Cell
+
+
 class DFSMaze(Maze):
     def generate(self, display):
         cur_cell = self.grid[0][0]

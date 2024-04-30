@@ -1,5 +1,6 @@
 import pygame.draw
 
+
 class Cell:
     def __init__(self, x: int, y: int, size=50, width=3):
         self.x = x
@@ -22,7 +23,6 @@ class Cell:
         if self.y - 1 >= 0 and not (grid[self.x][self.y - 1].is_checked):
             neighbours.append(grid[self.x][self.y - 1])
         return neighbours
-
 
     def get_used_neighbours(self, grid: list) -> list:
         neighbours = []
@@ -79,10 +79,10 @@ class Cell:
 
         if self.walls['top']:
             pygame.draw.line(display, pygame.Color('cyan'),
-                    (coord_x, coord_y), (coord_x + self.size, coord_y), self.width)
+                             (coord_x, coord_y), (coord_x + self.size, coord_y), self.width)
         if self.walls['right']:
             pygame.draw.line(display, pygame.Color('cyan'),
-                    (coord_x + self.size, coord_y), (coord_x + self.size, coord_y + self.size), self.width)
+                             (coord_x + self.size, coord_y), (coord_x + self.size, coord_y + self.size), self.width)
         if self.walls['bottom']:
             pygame.draw.line(display, pygame.Color('cyan'),
                              (coord_x, coord_y + self.size), (coord_x + self.size, coord_y + self.size), self.width)

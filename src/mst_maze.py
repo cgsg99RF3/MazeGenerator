@@ -1,8 +1,11 @@
 import pygame
+
 from random import choice
 from random import randint
+
 from src.maze import Maze
 from src.cell import Cell
+
 
 class MSTMaze(Maze):
     def generate(self, display):

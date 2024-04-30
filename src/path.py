@@ -1,5 +1,6 @@
 from src.maze import Maze
 
+
 class Path:
     def __init__(self, maze: Maze):
         self.used = [[False for y in range(maze.params.height)] for x in range(maze.params.width)]
