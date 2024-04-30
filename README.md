@@ -47,6 +47,10 @@ N - нет, не надо
 #
 ***Запуск и Завершение***  
 - Запуск
+> git clone git@github.com:cgsg99RF3/MazeGenerator.git &&
+> cd MazeGenerator &&   
+> git checkout development &&  
+> pip install -r requirements.txt &&  
 > python3 maze_generator.py 
 
 - Завершение программы  
