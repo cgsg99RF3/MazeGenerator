@@ -180,5 +180,5 @@ def find(self) # Поиск пути
 
 
 ***Примеры лабиринтов (подходят для загрузки):***
-- maze1.txt
-- maze2.txt 
+- src/examples/maze1.txt
+- src/examples/maze2.txt 
